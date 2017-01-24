@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style media="screen">
+        .postime {
+            text-align: center;;
+        }
+        .postimi {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: inline;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        #kerkoBar {
+            text-align: center;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>home</title>
+</head>
+
+<body>
+    <div class="navigimi">
+
+        <ul>
+            <li><a href="#">Kryesimi</a></li>
+            <li><a href="#">Profili</a></li>
+            <li><a class="active" href="#">Klubi</a></li>
+            <li><input id="kerkoBar" type="search" placeholder="Kerko" name="" value=""></li>
+            <li style="float:right"><a href="#">Settings</a></li>
+        </ul>
+
+
+    </div>
+    <div class="navKlubi">
+        <ul>
+            <li><a href="#">Anetaret</a></li>
+            <li><a href="#">Themeluesi</a></li>
+            <li style="float:right"><a href="#">Largohu nga klubi</a></li>
+        </ul>
+    </div>
+    <hr>
+    <!-- Ne kete pjese perdoruesi mund te postoje takim per loje futbolli
+            volejbolli ose basketbolli qe perdoruesit e tjere ta shohin-->
+    <div class="postimi">
+        <form class="postimi" action="index.html" method="post">
+            <!-- Filan Fisteku zevendesohet me emrin e perdoruesit me jquery -->
+            <label id="Perdoruesi" for="sportet">Filan Fisteku</label> deshiroj te luaj
+            <select class="listaSporteve" name="sporte">
+              <option value="fball">Futboll</option>
+              <option value="vball">Volejboll</option>
+              <option value="bball">Basketboll</option>
+          </select><br>
+            <label for="vendodhja">Vendodhja: </label>
+            <input id="vendodhja" type="text" name="postimi" value=""><br>
+            <label for="">Dita: </label>
+            <input type="date" name="" value="">
+            <label for="">Ora: </label>
+            <select class="ora" name="postimi">
+                <option value="">00</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+                <option value="">05</option>
+                <option value="">06</option>
+                <option value="">07</option>
+                <option value="">08</option>
+                <option value="">09</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+            </select>
+            <label for=""> Minuta:</label>
+            <select class="ora" name="postimi">
+                <option value="">00</option>
+                <option value="">10</option>
+                <option value="">15</option>
+                <option value="">20</option>
+                <option value="">30</option>
+                <option value="">40</option>
+                <option value="">45</option>
+                <option value="">50</option>
+            </select><br> Numri i Lojtareve: <input type="number" name="" value=""><br>
+            <button type="submit" name="posto">Posto ne klub</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
